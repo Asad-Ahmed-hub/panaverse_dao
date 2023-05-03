@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    @apply scroll-smooth ;  
+  }
+
+  body {
+    @apply scroll-smooth font-my-font bg-[#f4f7fa];
+  }
+}
+
+
+@layer components {
+
+  /* .primary-bg {
+    @apply bg-[#0d1117]
+  } */
+  .primary-bg {
+    @apply bg-gradient-to-b from-[#27134E] via-[#27134E] to-[#27134E]
+  }
+
+  .heading-color {
+    @apply text-[#d8102f];
+  }
+
+  .paragraph-text {
+    @apply text-[18px] text-[#130f25] text-justify w-full lg:text-[18px] xl:text-lg 2xl:text-lg px-2 ;
+  }
+
+  .paragraph-course-text {
+    @apply text-[18px] text-[#white] text-justify w-full lg:text-[18px] xl:text-lg 2xl:text-lg;
+  }
+
+  .link-text {
+    @apply text-lg text-[#d8102f] text-justify w-full  font-bold px-2;
+  }
+
+  .secondary-bg {
+    @apply  bg-[#F4F7FA]
+  }
+  .innerWidth { 
+    @apply 2xl:max-w-[1280px] w-full 
+  }
+  .interWidth{ @apply lg:w-[80%] w-[100%] }
+
+  .paddings{ @apply sm:p-16  px-6 py-12}
+  .yPaddings{ @apply sm:py-16  py-12}
+  .xPaddings{ @apply sm:px-16 px-6}
+  .topPaddings{ @apply sm:pt-16  pt-12}
+  .bottomPaddings{ @apply sm:pb-16  pb-12}
+
+  .flexCenter{ @apply flex justify-center items-center}
+  .flexStart{ @apply flex justify-start items-start}
+  .flexEnd{ @apply flex justify-end'}
+  .navPadding{ @apply pt-[98px]'}
+
+   .heroHeading{
+      @apply font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white}
+  .heroDText{
+      @apply md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]}
+
+    .heading-style {
+      @apply text-4xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-extrabold text-[#130f25];
+    }
+    .secondary-heading-style {
+      @apply text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-semibold text-[#130f25];
+    }
+    .card-heading-style {
+      @apply text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-bold ;
+    }
+
+
+
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8102f;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+.gradient-01 {
+  background-image: linear-gradient(
+    270deg,
+    hsl(295deg 76% 51%) 0%,
+    hsl(284deg 70% 73%) 26%,
+    hsl(257deg 70% 86%) 39%,
+    hsl(202deg 92% 90%) 50%,
+    hsl(215deg 77% 81%) 61%,
+    hsl(221deg 73% 70%) 74%,
+    hsl(220deg 76% 51%) 100%
+  );
+  filter: blur(125px);
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    97.86deg,
+    #a509ff 0%,
+    #34acc7 53.65%,
+    #a134c7 100%
+  );
+}
+
+.gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gradient-03 {
+  position: absolute;
+  width: 404px;
+  height: 800px;
+  left: 20%;
+  top: 5%;
+
+  background: rgba(149, 66, 232, 0.35);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+}
+
+.gradient-04 {
+  position: absolute;
+  width: 304px;
+  height: 100vh;
+  left: 30%;
+  top: 10%;
+
+  background: rgba(45, 72, 152, 0.75);
+  filter: blur(200px);
+  transform: rotate(-53.13deg);
+}
+
+.gradient-05 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.feedback-gradient {
+  position: absolute;
+  width: 200px;
+  height: 316px;
+  left: 0px;
+  top: 0px;
+
+  background: #8d39a3;
+  filter: blur(175px);
+}
+
+.footer-gradient {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  left: 37%;
+  bottom: 0;
+
+  background: #65c4fa;
+  filter: blur(150px);
+}
